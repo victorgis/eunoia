@@ -172,7 +172,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #623a96;
 }
 
@@ -208,12 +208,12 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover > a {
   /* color: #623a96; */
   color: #ed2b84;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -225,7 +225,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -237,7 +237,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -308,7 +308,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover > a {
   color: #623a96;
 }
 
@@ -343,11 +343,11 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
+.navbar-mobile .dropdown ul li:hover > a {
   color: #623a96;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -558,7 +558,7 @@ section {
   font-size: 15px;
 }
 
-.about ul li+li {
+.about ul li + li {
   margin-top: 10px;
 }
 
@@ -599,7 +599,7 @@ section {
   justify-content: center;
   align-items: center; */
   margin: auto 0;
-  font-size: 20px;
+  /* font-size: 20px; */
   padding: 0 50px;
 }
 .about-text2 {
@@ -607,9 +607,23 @@ section {
   padding: 0 50px;
 }
 
+.btn-readmore {
+  /* text-align: center; */
+  /* width: 200px;
+  margin: 0 auto; */
+  margin: 50px auto;
+  padding: 10px 30px;
+  background-color: #623a96;
+  color: #fff;
+}
+.btn-readmore:hover {
+  background-color: #775f98;
+  color: #fff;
+}
+
 @media (max-width: 991px) {
   .about-text {
-    font-size: 20px;
+    /* font-size: 20px; */
     padding: 20px;
     text-align: justify;
   }
@@ -623,10 +637,12 @@ section {
 .mission-vision {
   padding: 0 25%;
 }
-.mission, .vision {
+.mission,
+.vision {
   margin: 40px 0;
 }
-.mission h3, .vision h3 {
+.mission h3,
+.vision h3 {
   font-weight: 800;
 }
 /* .mission-bg {
@@ -826,7 +842,6 @@ ol {
   .other-section-container h3 {
     text-align: left;
   }
-
 }
 
 /*--------------------------------------------------------------
@@ -900,7 +915,7 @@ ol {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -947,7 +962,7 @@ ol {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #623a96;
   border: 0;
   padding: 10px 24px;
@@ -956,7 +971,7 @@ ol {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #775f98;
 }
 
@@ -992,11 +1007,11 @@ ol {
   font-size: 15px;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #4f5a62;
@@ -1120,13 +1135,13 @@ ol {
   border: 1px solid #b6daf2;
 }
 
-#footer .footer-newsletter form input[type=email] {
+#footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
 }
 
-#footer .footer-newsletter form input[type=submit] {
+#footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: -2px;
@@ -1142,7 +1157,7 @@ ol {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-#footer .footer-newsletter form input[type=submit]:hover {
+#footer .footer-newsletter form input[type="submit"]:hover {
   background: #623a96;
 }
 
@@ -1171,4 +1186,26 @@ ol {
   background: #775f98;
   color: #fff;
   text-decoration: none;
+}
+
+.get-involved-containers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.get-involved-h3 {
+  text-align: justify;
+  color: #623a96;
+  padding: 20px 0px;
+}
+
+.get-involved-p {
+  /* padding: 0 20px; */
+}
+
+.get-involved-details {
+  border-radius: 5px;
+  padding: 0 10px;
+  margin: 0 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
