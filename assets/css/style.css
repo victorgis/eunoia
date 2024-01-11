@@ -354,7 +354,16 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero {
+/* #hero {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/eunoia-hero-1.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+} */
+/* #hero {
   width: 100%;
   height: 60vh;
   height: 100vh;
@@ -373,13 +382,54 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
+} */
+
+#hero {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background: url("../img/hero-bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin-top: 70px;
 }
 
-#hero .container {
+.containerr {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  #hero .hero-content h2 {
+    font-size: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .hero-slider {
+    display: none;
+  }
+  .containerr {
+    display: block;
+  }
+}
+#hero .hero-slider {
+  z-index: 8;
+  height: 60vh;
+}
+#hero .hero-slider .swiper-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-property: opacity;
+}
+
+/* New changes  */
+
+/* #hero .container {
   z-index: 2;
-}
+} */
 
-#hero h1 {
+#hero h1,
+#heroo h1 {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -387,17 +437,20 @@ h6 {
   color: #fff;
 }
 
-#hero h1 span {
+#hero h1 span,
+#heroo h1 span {
   border-bottom: 4px solid #623a96;
 }
 
-#hero h2 {
+#hero h2,
+#heroo h2 {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 30px;
   font-size: 24px;
 }
 
-#hero .btn-get-started {
+#hero .btn-get-started,
+#heroo .btn-get-started {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 13px;
@@ -412,13 +465,21 @@ h6 {
   text-transform: uppercase;
 }
 
-#hero .btn-get-started:hover {
+#hero .btn-get-started:hover,
+#heroo .btn-get-started:hover {
   background: #4ea5e000;
 }
 
 @media (max-width: 992px) {
-  #hero {
+  #hero,
+  #heroo {
     height: calc(100vh - 70px);
+  }
+  .hero-slider {
+    display: none;
+  }
+  .containerr {
+    display: block;
   }
 }
 
