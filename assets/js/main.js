@@ -224,13 +224,39 @@
     selector: ".portfolio-lightbox",
   });
 
+  // new Swiper(".hero-slider", {
+  //   speed: 1000,
+  //   loop: true,
+  //   effect: "fade",
+  //   autoplay: {
+  //     delay: 2500,
+  //     disableOnInteraction: false,
+  //   },
+  // });
+
   new Swiper(".hero-slider", {
-    speed: 1000,
+    speed: 600,
     loop: true,
-    effect: "fade",
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
+    },
+    slidesPerView: "auto",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+
+      1200: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
     },
   });
 

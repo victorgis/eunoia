@@ -354,24 +354,19 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/* #hero {
+
+#hero {
   width: 100%;
   height: 60vh;
-  background: url("../img/eunoia-hero-1.jpg") center center;
+  height: 80vh;
+  background: url("../img/hero.jpg") center center;
   background-size: cover;
   position: relative;
   margin-top: 70px;
   padding: 0;
-} */
-/* #hero {
-  width: 100%;
-  height: 60vh;
-  height: 100vh;
-  background: url("../img/hero-bg.jpg") center center;
-  background-size: cover;
-  position: relative;
-  margin-top: 70px;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hero:before {
@@ -382,20 +377,21 @@ h6 {
   top: 0;
   left: 0;
   right: 0;
-} */
-
-#hero {
-  width: 100%;
-  height: 60vh;
-  position: relative;
-  background: url("../img/hero-bg.jpg") no-repeat;
-  background-size: cover;
-  padding: 0;
-  margin-top: 70px;
 }
 
 .containerr {
   display: none;
+}
+
+
+.slider-container {
+  text-align: center;
+  color: #fff;
+  padding: 0 300px;
+}
+
+.slider-container h2 {
+  font-size: 140px;
 }
 
 @media (max-width: 767px) {
@@ -404,29 +400,11 @@ h6 {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .hero-slider {
-    display: none;
-  }
+
   .containerr {
     display: block;
   }
 }
-#hero .hero-slider {
-  z-index: 8;
-  height: 60vh;
-}
-#hero .hero-slider .swiper-slide {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition-property: opacity;
-}
-
-/* New changes  */
-
-/* #hero .container {
-  z-index: 2;
-} */
 
 #hero h1,
 #heroo h1 {
@@ -444,10 +422,20 @@ h6 {
 
 #hero h2,
 #heroo h2 {
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 30px;
-  font-size: 24px;
+  position: relative;
+  /* color: #623a96; */
+  /* margin-bottom: 30px; */
+  font-size: 48px;
+  font-weight: 800;
+  background-color: #623a9645;
+  padding: 40px;
 }
+
+/* #hero p {
+  font-size: 20px;
+  background-color: #623a9645;
+  padding: 40px;
+} */
 
 #hero .btn-get-started,
 #heroo .btn-get-started {
@@ -473,14 +461,17 @@ h6 {
 @media (max-width: 992px) {
   #hero,
   #heroo {
-    height: calc(100vh - 70px);
+    height: calc(80vh - 70px);
   }
-  .hero-slider {
-    display: none;
-  }
+
   .containerr {
     display: block;
   }
+  .slider-container {
+  text-align: center;
+  color: #fff;
+  padding: 0 30px;
+}
 }
 
 @media (max-width: 768px) {
@@ -660,11 +651,12 @@ section {
   justify-content: center;
   align-items: center; */
   margin: auto 0;
-  /* font-size: 20px; */
+  font-size: 20px;
   padding: 0 50px;
 }
 .about-text2 {
-  margin: auto 0;
+  /* margin: auto 0; */
+  font-size: 20px;
   padding: 0 50px;
 }
 
@@ -684,12 +676,13 @@ section {
 
 @media (max-width: 991px) {
   .about-text {
-    /* font-size: 20px; */
+    font-size: 16px;
     padding: 20px;
     text-align: justify;
   }
   .about-text2 {
     padding: 0 20px;
+    font-size: 16px;
     text-align: justify;
   }
 }
@@ -1255,14 +1248,24 @@ ol {
 }
 
 .get-involved-h3 {
-  text-align: justify;
+  /* text-align: justify; */
   color: #623a96;
   padding: 20px 0px;
 }
 
 .get-involved-details {
   border-radius: 5px;
-  padding: 0 10px;
-  margin: 0 10px;
+  padding: 20px;
+  margin: 20px 10px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.get-involved-details img {
+  width: 399px;
+}
+
+@media (max-width: 991px) {
+  .get-involved-containers {
+  display: block;
+  /* grid-template-columns: repeat(3, 1fr); */
+}
 }
